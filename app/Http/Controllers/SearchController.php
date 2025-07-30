@@ -10,7 +10,7 @@ class SearchController extends Controller
     public function searchPhotos(Request $request) 
     {
         //CALL API from here
-        $apiKey = 'vDbK11wyz5sueiUqRbs74nOf1aJxObZKoAPJn21MFcs';
+        $apiKey = ''; //API KEY GOES HERE
         $endPoint = 'https://api.unsplash.com/search/photos';
 
         if(isset($request->heading) && $request->heading != '' && ($request->chk_logo == '' || $request->chk_logo == false)) {
